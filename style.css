@@ -1,7 +1,7 @@
-/* Estilo general */
+/* Estilo general de la página */
 body {
     background-color: #f8f9fa;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     color: #333;
 }
 
@@ -19,7 +19,7 @@ h1 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-/* Tarjetas de noticias */
+/* Estilos para las tarjetas de noticias */
 .card {
     border: none;
     border-radius: 10px;
@@ -27,10 +27,12 @@ h1 {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Efecto al pasar el mouse sobre la tarjeta */
 .card:hover {
     transform: scale(1.03);
 }
 
+/* Imagen de la noticia */
 .card-img-top {
     height: 200px;
     object-fit: cover;
@@ -38,21 +40,25 @@ h1 {
     border-top-right-radius: 10px;
 }
 
+/* Cuerpo de la tarjeta */
 .card-body {
     padding: 20px;
 }
 
+/* Títulos de las noticias */
 .card-title {
     font-size: 1.3rem;
     font-weight: bold;
     color: #343a40;
 }
 
+/* Descripción de la noticia */
 .card-text {
     font-size: 1rem;
     color: #6c757d;
 }
 
+/* Botón de "Leer más" */
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -63,7 +69,7 @@ h1 {
     background-color: #0056b3;
 }
 
-/* Paginación */
+/* Estilos para la paginación */
 .pagination {
     margin-top: 20px;
 }
@@ -77,24 +83,4 @@ h1 {
 .page-item .page-link:hover {
     background-color: #007bff;
     color: white;
-}
-
-.page-item.disabled .page-link {
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .card-img-top {
-        height: 150px;
-    }
-
-    .card-title {
-        font-size: 1.1rem;
-    }
-
-    .card-text {
-        font-size: 0.9rem;
-    }
 }
